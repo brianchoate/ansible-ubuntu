@@ -12,10 +12,9 @@ sources:
      repo: 'https://github.com/brianchoate/ansible-ubuntu'
      playbooks:
           - chrome.yml
+          - atom.yml
   #        - github.yml
   #        - aws.yml
-  #        - atom.yml
-  #        - chome.yml
   #        - mypy.yml
   #           flake8, pep8, pep256, yaph, virtualenvwrapper
   #        - zsh.yml
