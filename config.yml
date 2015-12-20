@@ -21,4 +21,4 @@ sources:
   #        - zsh.yml
   #           oh-my-zsh
   #        - tools
-  #           icdiff, ack, http, powerline
+  #           icdiff, ack, http, powerline, thefuck
