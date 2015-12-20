@@ -1,6 +1,7 @@
 - hosts: workstation
   tasks:
     - name: 'download atom'
+      sudo: no
       get_url: url=https://atom.io/download/deb
         dest=~/.ansible/downloads/
   
@@ -9,6 +10,7 @@
       apt: deb=~/.ansible/downloads/atom-amd64.deb
       
       - name: 'install atom packages playbook'
+        sudo: no
         shell: ansible-galaxy install hnakamur.atom-packages
         
     # apm install file-watcher
