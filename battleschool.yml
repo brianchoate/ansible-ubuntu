@@ -1,0 +1,6 @@
+---
+- hosts: workstation
+
+  tasks:    - name: 'create download folder'
+      file: path=~/.ansible/downloads/ state=directory mode=0755
+
