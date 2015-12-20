@@ -11,8 +11,9 @@ sources:
    - name: 'ubuntu1510'
      repo: 'https://github.com/brianchoate/ansible-ubuntu'
      playbooks:
-          - chrome.yml
-          - atom.yml
+      - battleschool.yml
+      - chrome.yml
+      - atom.yml
   #        - github.yml
   #        - aws.yml
   #        - mypy.yml
