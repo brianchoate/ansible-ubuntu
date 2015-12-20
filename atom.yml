@@ -5,4 +5,5 @@
         dest=/tmp/
   
     - name: 'install atom'
+      sudo: yes
       apt: deb=/tmp/atom-amd64.deb 
