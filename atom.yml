@@ -7,3 +7,20 @@
     - name: 'install atom'
       sudo: yes
       apt: deb=/tmp/atom-amd64.deb 
+      
+    # apm install file-watcher
+    # apm install gitignore-snippets
+    # apm install language-chef
+    # apm install language-gitignore
+    # apm install language-varnish
+    # apm install linter-clang
+    # apm install linter-foodcritic
+    # apm install linter-pep257
+    # apm install linter-pep8
+    # apm install linter-pylint
+    # apm install linter-ruby
+    # apm install linter-tidy
+    # apm install minimap
+    # apm install wakatime
+    ## apm install 
+    ## apm install python-autopep8
