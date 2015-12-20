@@ -2,11 +2,11 @@
   tasks:
     - name: 'download atom'
       get_url: url=https://atom.io/download/deb
-        dest=/tmp/
+        dest=~/.ansible/downloads/
   
     - name: 'install atom'
       sudo: yes
-      apt: deb=/tmp/atom-amd64.deb
+      apt: deb=~/.ansible/downloads/atom-amd64.deb
       
       - name: 'install atom packages playbook'
         shell: ansible-galaxy install hnakamur.atom-packages
