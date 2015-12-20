@@ -1,9 +1,10 @@
 - hosts: workstation
   tasks:
     - name: 'download chrome'
+      sudo: no
       get_url: url=https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-        dest=/tmp/
+        dest=~/.ansible/downloads/
   
     - name: 'install chrome'
       sudo: yes
-      apt: deb=/tmp/google-chrome-stable_current_amd64.deb
+      apt: deb=~/.ansible/downloads/google-chrome-stable_current_amd64.deb
