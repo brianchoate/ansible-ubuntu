@@ -6,8 +6,11 @@
   
     - name: 'install atom'
       sudo: yes
-      apt: deb=/tmp/atom-amd64.deb 
+      apt: deb=/tmp/atom-amd64.deb
       
+      - name: 'install atom packages playbook'
+        shell: ansible-galaxy install hnakamur.atom-packages
+        
     # apm install file-watcher
     # apm install gitignore-snippets
     # apm install language-chef
