@@ -1,0 +1,8 @@
+- hosts: workstation
+  tasks:
+    - name: 'download atom'
+      get_url: url=https://atom.io/download/deb
+        dest=/tmp/
+  
+    - name: 'install atom'
+      apt: deb=/tmp/atom-amd64.deb 
