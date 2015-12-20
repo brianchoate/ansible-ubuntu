@@ -5,3 +5,8 @@
     - name: 'create download folder'
       file: path=~/.ansible/downloads/ state=directory mode=0755 owner=andor group=andor
 
+
+  tasks:    
+    - name: 'create logz folder'
+      file: path=~/.ansible/logz/ state=directory mode=0755 owner=andor group=andor
+
