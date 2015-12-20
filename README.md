@@ -16,3 +16,14 @@ Do this:
 ```
 sudo chown -R USERNAME:USERNAME ~/.ansible/
 ```
+
+If you see something like:
+```
+Task FAILED: get_url Destination /tmp/downloaded_config.yml not writable
+```
+Do this:
+```
+sudo rm /tmp/downloaded_config.yml
+```
+
+
