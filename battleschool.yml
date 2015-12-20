@@ -3,10 +3,12 @@
 
   tasks:    
     - name: 'create download folder'
+      sudo: no
       file: path=~/.ansible/downloads/ state=directory mode=0755 owner=andor group=andor
 
 
   tasks:    
     - name: 'create logz folder'
+      sudo: no
       file: path=~/.ansible/logz/ state=directory mode=0755 owner=andor group=andor
 
