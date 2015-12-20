@@ -1,0 +1,7 @@
+- host: workstation
+  tasks:
+    - name: 'download chrome'
+      get_url: url=https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+      dest: ~/Downloads/
+    - name: 'install chrome'
+      apt: deb=~/Downloads/google-chrome-stable_current_amd64.deb
