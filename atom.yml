@@ -9,23 +9,28 @@
       sudo: yes
       apt: deb=~/.ansible/downloads/atom-amd64.deb
       
-      - name: 'install atom packages playbook'
-        sudo: no
-        shell: ansible-galaxy install hnakamur.atom-packages
+    - name: 'install atom packages playbook'
+      sudo: no
+      shell: ansible-galaxy install jgkim.atom
         
-    # apm install file-watcher
-    # apm install gitignore-snippets
-    # apm install language-chef
-    # apm install language-gitignore
-    # apm install language-varnish
-    # apm install linter-clang
-    # apm install linter-foodcritic
-    # apm install linter-pep257
-    # apm install linter-pep8
-    # apm install linter-pylint
-    # apm install linter-ruby
-    # apm install linter-tidy
-    # apm install minimap
-    # apm install wakatime
-    ## apm install 
-    ## apm install python-autopep8
+    - name: 'install atom packages'
+      sudo: no
+      vars:
+        atom_upgrade_all: True
+      atom_packages:
+      - language-ansible
+      - file-watcher
+      - gitignore-snippets
+      - language-chef
+      - language-gitignore
+      - language-varnish
+      - linter-clang
+      - linter-foodcritic
+      - linter-pep257
+      - linter-pep8
+      - linter-pylint
+      - linter-ruby
+      - linter-tidy
+      - minimap
+      - wakatime
+      - python-autopep8
