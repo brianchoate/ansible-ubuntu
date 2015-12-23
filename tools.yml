@@ -27,3 +27,4 @@
         - flake8
         - powerline-status
         - yapf
+        - thefuck
