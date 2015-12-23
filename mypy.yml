@@ -1,0 +1,15 @@
+- hosts: workstation
+  tasks:
+    - name: 'download atom'
+      sudo: no
+      get_url: url=https://atom.io/download/deb
+        dest=~/.ansible/downloads/
+  
+    - name: 'install atom'
+      sudo: yes
+      apt: deb=~/.ansible/downloads/atom-amd64.deb
+      
+      - name: 'install atom packages playbook'
+        sudo: no
+        shell: ansible-galaxy install hnakamur.atom-packages
+        
