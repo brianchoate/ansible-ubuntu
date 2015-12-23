@@ -11,6 +11,7 @@ sources:
    - name: 'ubuntu1510'
      repo: 'https://github.com/brianchoate/ansible-ubuntu'
      playbooks:
+      - mypy.yml
       - zsh.yml
 
   #        - battleschool.yml
