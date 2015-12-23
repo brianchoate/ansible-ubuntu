@@ -12,6 +12,7 @@ sources:
      repo: 'https://github.com/brianchoate/ansible-ubuntu'
      playbooks:
       - battleschool.yml
+      - galaxy.yml
       - chrome.yml
       - atom.yml
   #        - github.yml
