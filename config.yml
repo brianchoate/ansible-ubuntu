@@ -15,7 +15,7 @@ sources:
       #- galaxy.yml
       #- chrome.yml
       #- atom.yml
-      - mypy.yml
+      #- mypy.yml
       - zsh.yml
   #        - github.yml
   #        - aws.yml
