@@ -1,10 +1,10 @@
 - hosts: workstation
   tasks:
     - name: 'download chrome'
-      sudo: no
+      sudo: yes
       get_url: url=https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-        dest=~/.ansible/downloads/
+        dest=/opt/battleschool/downloads/
   
     - name: 'install chrome'
       sudo: yes
-      apt: deb=/home/andor/.ansible/downloads/google-chrome-stable_current_amd64.deb
+      apt: deb=/opt/battleschool/downloads/google-chrome-stable_current_amd64.deb
