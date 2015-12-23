@@ -1,7 +1,7 @@
 - hosts: workstation
   tasks:
     - name: 'download chrome'
-      sudo: yes
+      sudo: no
       get_url: url=https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
         dest=/opt/battleschool/downloads/
   
