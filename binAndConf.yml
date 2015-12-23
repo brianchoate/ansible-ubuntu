@@ -11,6 +11,6 @@
     - name: 'Pull down conf repo'
       sudo: no
       git: repo=git@github.com:brianchoate/conf.git
-        dest=~/config
+        dest=~/conf
         accept_hostkey=yes
         key_file=~/.ssh/id_rsa.pub
