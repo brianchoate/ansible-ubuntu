@@ -9,7 +9,10 @@
       sudo: yes
       apt: deb=~/.ansible/downloads/atom-amd64.deb
 
-    - name: 'install atom packages'
-      sudo: no
-      atom_packages:
-      - language-ansible
+
+vars:
+  atom_upgrade_all: True
+  atom_packages:
+    - language-ansible
+roles:
+   - { role: jgkim.atom }
