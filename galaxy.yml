@@ -2,5 +2,5 @@
   tasks:
     - name: 'install atom packages playbook'
       sudo: no
-      command: ansible-galaxy install jgkim.atom
+      command: /opt/battleschool/bin/ansible-galaxy install jgkim.atom
         
