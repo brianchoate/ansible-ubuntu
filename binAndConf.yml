@@ -2,7 +2,11 @@
 
   tasks:
     - name: 'Pull down bin repo'
-      git: repo=git@github.com:brianchoate/bin.git dest=~/bin
+      git: repo=git@github.com:brianchoate/bin.git 
+        dest=~/bin
+        accept_hostkey=yes
 
     - name: 'Pull down conf repo'
-      git: repo=git@github.com:brianchoate/conf.git dest=~/config
+      git: repo=git@github.com:brianchoate/conf.git
+        dest=~/config
+        accept_hostkey=yes
