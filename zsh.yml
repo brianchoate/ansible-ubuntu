@@ -2,7 +2,6 @@
 
   tasks:
     - name: 'install oh-my-zsh'
-      apt: name=foo update_cache=yes
       command:  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
         creates=~/.oh-my-zsh
       
