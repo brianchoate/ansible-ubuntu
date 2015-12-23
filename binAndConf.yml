@@ -1,0 +1,8 @@
+- hosts: workstation
+
+  tasks:
+    - name: 'Pull down bin repo'
+      git: repo=git@github.com:brianchoate/bin.git dest=~/bin
+
+    - name: 'Pull down conf repo'
+      git: repo=git@github.com:brianchoate/conf.git dest=~/config
