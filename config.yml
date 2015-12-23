@@ -14,24 +14,13 @@ sources:
       - binAndConf.yml
       - icdiff.yml
       
-  #    - tools.yml
   #    - n1.yml
-  #    - mypy.yml
   #    - zsh.yml
   #    - tools.yml
 
-  #        - battleschool.yml
-  #        - galaxy.yml
-  #        - chrome.yml
-  #        - atom.yml
-  #        - mypy.yml
-  
-  
-  #        - github.yml
-  #        - aws.yml
-  #        - mypy.yml
-  #           flake8, pep8, pep256, yaph, virtualenvwrapper
-  #        - zsh.yml
-  #           oh-my-zsh
-  #        - tools
-  #           icdiff, ack, http, powerline, thefuck
+  #    - battleschool.yml
+  #    - galaxy.yml
+  #    - chrome.yml
+  #    - atom.yml
+  #    - aws.yml
+  #thefuck
