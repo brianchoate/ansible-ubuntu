@@ -23,11 +23,11 @@
     - name: 'download atom'
       sudo: no
       get_url: url=https://atom.io/download/deb
-        dest=~/.ansible/downloads/
+        dest=/opt/battleschool/downloads/
   
     - name: 'install atom'
       sudo: yes
-      apt: deb=~/.ansible/downloads/atom-amd64.deb
+      apt: deb=/opt/battleschool/downloads/atom-amd64.deb
 
   roles:
    - { role: jgkim.atom }
