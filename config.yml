@@ -11,7 +11,7 @@ sources:
    - name: 'ubuntu1510'
      repo: 'https://github.com/brianchoate/ansible-ubuntu'
      playbooks:
-      - bin.yml
+      - binAndConf.yml
       - icdiff.yml
       
   #    - tools.yml
