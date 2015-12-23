@@ -12,6 +12,6 @@
       
     - name: 'install oh-my-zsh'
       sudo: no
-      command:  /opt/battleschool/downloads/oh-my-zsh-installer.sh
+      command:  /bin/sh -c /opt/battleschool/downloads/oh-my-zsh-installer.sh
         creates=~/.oh-my-zsh
       
