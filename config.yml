@@ -12,6 +12,8 @@ sources:
      repo: 'https://github.com/brianchoate/ansible-ubuntu'
      playbooks:
       - tools.yml
+      - icdiff.yml
+      
   #    - n1.yml
   #    - mypy.yml
   #    - zsh.yml
