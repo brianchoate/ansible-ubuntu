@@ -1,0 +1,11 @@
+- hosts: workstation
+  tasks:
+    - name: 'install tools packages'
+      apt: name={{ item }}
+      with_items:
+        - ack-grep
+        - httpie
+        - pylint
+        - pylint3
+        - pep8
+        - pep257
