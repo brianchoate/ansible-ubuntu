@@ -15,3 +15,10 @@
       command:  /bin/sh -c /opt/battleschool/downloads/oh-my-zsh-installer.sh
         creates=~/.oh-my-zsh
       
+    - name: 'remove .zshrc'
+      sudo: no
+      file: state=absent path=~/.zshrc
+      
+    - name: 'Link .zshrc'
+      sudo: no
+      file: state=link src=~/dotfile/zshr dest=~/.zshrc
