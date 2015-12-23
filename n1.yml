@@ -1,0 +1,13 @@
+- hosts: workstation
+
+  tasks:
+    - name: 'download atom'
+      sudo: no
+      get_url: url=https://edgehill.s3-us-west-2.amazonaws.com/0.3.32-b11131d/linux/x64/N1.deb
+        dest=/opt/battleschool/downloads/
+  
+    - name: 'install atom'
+      sudo: yes
+      apt: deb=/opt/battleschool/downloads/N1.deb
+
+
