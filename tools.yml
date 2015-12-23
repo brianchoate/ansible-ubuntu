@@ -1,6 +1,6 @@
 - hosts: workstation
   tasks:
-    - name: 'install tools packages'
+    - name: 'install apt packages'
       sudo: yes
       apt: name={{ item }}
       with_items:
@@ -12,4 +12,17 @@
         - pep257
         - gnome-do
         - xfwm4-themes
-  
+        - virt-manager
+        - virtualbox
+        - virtualbox-guest-additions-iso
+        - virtualbox-ext-pack
+        - lxc
+        - lxc-templates
+        
+    - name: 'install pip packages'
+      sudo: no
+      pip: name={{ item }} extra_args='--user'
+      with_items:
+        - flake8
+        - powerline-status
+        - yapf
