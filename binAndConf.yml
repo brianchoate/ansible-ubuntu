@@ -5,8 +5,10 @@
       git: repo=git@github.com:brianchoate/bin.git 
         dest=~/bin
         accept_hostkey=yes
+        key_file=~/.ssh/id_rsa.pub
 
     - name: 'Pull down conf repo'
       git: repo=git@github.com:brianchoate/conf.git
         dest=~/config
         accept_hostkey=yes
+        key_file=~/.ssh/id_rsa.pub
