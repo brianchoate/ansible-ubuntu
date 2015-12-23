@@ -6,6 +6,10 @@
       get_url: url=https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh
         dest=/opt/battleschool/downloads/oh-my-zsh-installer.sh
         
+    - name: 'set execute'
+      sudo: no
+      file: path=/opt/battleschool/downloads/oh-my-zsh-installer.sh owner=andor group=andor mode=0755
+      
     - name: 'install oh-my-zsh'
       sudo: no
       command:  /opt/battleschool/downloads/oh-my-zsh-installer.sh
