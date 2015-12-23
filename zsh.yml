@@ -21,4 +21,4 @@
       
     - name: 'Link .zshrc'
       sudo: no
-      file: state=link src=~/dotfiles/zshrc dest=~/.zshrc
+      file: state=link src=~/conf/zsh/zshrc dest=~/.zshrc
