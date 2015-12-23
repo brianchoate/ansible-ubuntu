@@ -1,7 +1,13 @@
 - hosts: workstation
 
   tasks:
+    - name: 'download installer'
+      sudo: no
+      get_url: url=https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+        dest=/opt/battleschool/downloads/oh-my-zsh-installer.sh
+        
     - name: 'install oh-my-zsh'
-      command:  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+      sudo: no
+      command:  /opt/battleschool/downloads/oh-my-zsh-installer.sh
         creates=~/.oh-my-zsh
       
