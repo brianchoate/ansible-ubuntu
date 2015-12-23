@@ -14,3 +14,19 @@
         dest=~/conf
         accept_hostkey=yes
         key_file=~/.ssh/id_rsa.pub
+
+    - name: 'link conf'
+      sudo: no
+      file: src={{ item.src }} dest={{ item.dest }} state=link
+        with_items:
+          - { src: '~/conf/aliasrc', dest: '~/.aliasrc'}
+          - { src: '~/conf/vimrc.active', dest: '~/.vimrc'}
+          - { src: '~/conf/screenrc', dest: '~/.screenrc'}
+#          - { src: '~/conf/', dest: '~/.'}
+#          - { src: '~/conf/', dest: '~/.'}
+#          - { src: '~/conf/', dest: '~/.'}
+#          - { src: '~/conf/', dest: '~/.'}
+#          - { src: '~/conf/', dest: '~/.'}
+#          - { src: '~/conf/', dest: '~/.'}
+#          - { src: '~/conf/', dest: '~/.'}
+#          - { src: '~/conf/', dest: '~/.'}
