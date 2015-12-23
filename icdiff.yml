@@ -1,0 +1,11 @@
+- hosts: workstation
+
+  tasks:
+    - name: 'download icdiff'
+      sudo: no
+      get_url: url=https://raw.githubusercontent.com/jeffkaufman/icdiff/release-1.7.3/icdiff
+        dest=~/bin/icdiff
+        
+    - name: 'remove .zshrc'
+      sudo: no
+      file: path=~/bin/icdiff mode="ugo+rx"
