@@ -1,4 +1,9 @@
 - hosts: workstation
+  vars:
+    atom_upgrade_all: True
+    atom_packages:
+      - language-ansible
+
   tasks:
     - name: 'download atom'
       sudo: no
@@ -9,10 +14,5 @@
       sudo: yes
       apt: deb=~/.ansible/downloads/atom-amd64.deb
 
-
-vars:
-  atom_upgrade_all: True
-  atom_packages:
-    - language-ansible
-roles:
+  roles:
    - { role: jgkim.atom }
