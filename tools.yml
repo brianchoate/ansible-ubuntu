@@ -10,3 +10,5 @@
         - pylint3
         - pep8
         - pep257
+        - gnome-do
+  
