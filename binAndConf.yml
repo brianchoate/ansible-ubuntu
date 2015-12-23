@@ -17,16 +17,16 @@
 
     - name: 'link conf'
       sudo: no
-      file: src={{ item.src }} dest={{ item.dest }} state=link
+      file: src={{ item.target }} dest={{ item.slink }} state=link
         with_items:
-          - { src: '~/conf/aliasrc', dest: '~/.aliasrc'}
-          - { src: '~/conf/vimrc.active', dest: '~/.vimrc'}
-          - { src: '~/conf/screenrc', dest: '~/.screenrc'}
-#          - { src: '~/conf/', dest: '~/.'}
-#          - { src: '~/conf/', dest: '~/.'}
-#          - { src: '~/conf/', dest: '~/.'}
-#          - { src: '~/conf/', dest: '~/.'}
-#          - { src: '~/conf/', dest: '~/.'}
-#          - { src: '~/conf/', dest: '~/.'}
-#          - { src: '~/conf/', dest: '~/.'}
-#          - { src: '~/conf/', dest: '~/.'}
+          - { target: '~/conf/aliasrc', slink: '~/.aliasrc'}
+          - { target: '~/conf/vimrc.active', slink: '~/.vimrc'}
+          - { target: '~/conf/screenrc', slink: '~/.screenrc'}
+#          - { target: '~/conf/', slink: '~/.'}
+#          - { target: '~/conf/', slink: '~/.'}
+#          - { target: '~/conf/', slink: '~/.'}
+#          - { target: '~/conf/', slink: '~/.'}
+#          - { target: '~/conf/', slink: '~/.'}
+#          - { target: '~/conf/', slink: '~/.'}
+#          - { target: '~/conf/', slink: '~/.'}
+#          - { target: '~/conf/', slink: '~/.'}
