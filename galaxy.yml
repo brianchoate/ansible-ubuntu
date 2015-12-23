@@ -1,0 +1,6 @@
+- hosts: workstation
+  tasks:
+    - name: 'install atom packages playbook'
+      sudo: no
+      shell: ansible-galaxy install jgkim.atom
+        
