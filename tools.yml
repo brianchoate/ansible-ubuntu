@@ -19,6 +19,19 @@
         - lxc
         - lxc-templates
         - xclip
+        - vim                 
+        - vim-gtk             
+        - vim-addon-manager  
+        - vim-gnome
+        - vim-python-jedi
+        - vim-scripts 
+        - vim-syntastic
+        - vim-tabular
+        - vim-vimoutliner                                                                                               
+        - vim-gocomplete
+        - vim-haproxy
+        - vim-syntax-docker
+        - vim-youcompleteme  
         
     - name: 'install pip packages'
       sudo: no
