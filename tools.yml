@@ -28,3 +28,5 @@
         - powerline-status
         - yapf
         - thefuck
+        - awscli
+        - saws
