@@ -3,6 +3,21 @@
     atom_upgrade_all: True
     atom_packages:
       - language-ansible
+      - file-watcher
+      - gitignore-snippets
+      - language-chef
+      - language-gitignore
+      - language-varnish
+      - linter-clang
+      - linter-foodcritic
+      - linter-pep257
+      - linter-pep8
+      - linter-pylint
+      - linter-ruby
+      - linter-tidy
+      - minimap
+      - wakatime
+      - python-autopep8
 
   tasks:
     - name: 'download atom'
