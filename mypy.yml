@@ -8,6 +8,5 @@
         - pylint
         - pep8
         - pep257
-        - virtualenvwrapper
         - httpie
         - powerline-status
