@@ -5,8 +5,4 @@
       pip: name={{ item }} extra_args='--user'
       with_items:
         - flake8
-        - pylint
-        - pep8
-        - pep257
-        #- httpie
         - powerline-status
