@@ -20,7 +20,7 @@
       file: src={{ item.target }} dest={{ item.slink }} state=link
       with_items:
         - { target: '~/conf/aliasrc', slink: '~/.aliasrc'}
-        - { target: '~/conf/vimrc.active', slink: '~/.vimrc'}
+        - { target: '~/conf/vimrc_active', slink: '~/.vimrc'}
         - { target: '~/conf/screenrc', slink: '~/.screenrc'}
 #        - { target: '~/conf/', slink: '~/.'}
 #        - { target: '~/conf/', slink: '~/.'}
