@@ -3,9 +3,9 @@
   tasks:
     - name: 'download spideroak'
       sudo: no
-      get_url: url= https://spideroak.com/getbuild?platform=ubuntu&arch=x86_64
+      get_url: url=https://spideroak.com/getbuild?platform=ubuntu&arch=x86_64
         dest=/opt/battleschool/downloads/spideroakone-amd64.deb
-  
+
     - name: 'install atom'
       sudo: yes
       apt: deb=/opt/battleschool/downloads/spideroakone-amd64.deb
