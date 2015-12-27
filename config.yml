@@ -20,4 +20,5 @@ sources:
       - atom.yml
       - n1.yml
       - tools.yml
+      - spideroak.yml
   #    - aws.yml
