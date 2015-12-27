@@ -12,7 +12,7 @@ sources:
      repo: 'https://github.com/brianchoate/ansible-ubuntu'
      playbooks:
       - battleschool.yml
-      - galaxy.yml
+  #    - galaxy.yml
       - binAndConf.yml
       - icdiff.yml
       - zsh.yml
