@@ -11,13 +11,13 @@ sources:
    - name: 'ubuntu1510'
      repo: 'https://github.com/brianchoate/ansible-ubuntu'
      playbooks:
-      - battleschool.yml
+  #    - battleschool.yml
   #    - galaxy.yml
-      - binAndConf.yml
+  #    - binAndConf.yml
   #    - icdiff.yml
-      - zsh.yml
+  #    - zsh.yml
   #    - chrome.yml
-      - atom.yml
+  #    - atom.yml
   #    - n1.yml
       - tools.yml
       - spideroak.yml
