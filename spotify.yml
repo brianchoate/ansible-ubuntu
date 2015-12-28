@@ -17,4 +17,7 @@
 
     - name: 'install spotify'
       sudo: yes
-      apt: name=spotify-client
+      apt: name={{ item }}
+      with_items:
+        - libgcrypt20
+        - spotify-client
