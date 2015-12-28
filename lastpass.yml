@@ -13,6 +13,6 @@
 
     - name: 'install lastpass'
       sudo: yes
-      command: /opt/battleschool/downloads/lplinux
+      command: /opt/battleschool/downloads/install_lastpass.sh
 
 # Unarchive a file that needs to be downloaded (added in 2.0)
