@@ -13,7 +13,7 @@
 
     - name: 'install lastpass'
       sudo: yes
-      command: install_lastpass.sh
+      command: /opt/battleschool/downloads/install_lastpass.sh
         chdir=/opt/battleschool/downloads/
 
 
