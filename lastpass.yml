@@ -3,9 +3,13 @@
   tasks:
     - name: 'download lastpass'
       sudo: no
-      unarchive: src=https://lastpass.com/lplinux.tar.bz2
+      get_url: url=http://lastpass.com/lplinux.tar.bz2
         dest=/opt/battleschool/downloads/
-        copy=no
+
+    - name: 'Unarchive lastpass'
+      sudo: no
+      unarchive: src=/opt/battleschool/downloads/lplinux.tar.bz2
+        dest=/opt/battleschool/downloads/lplinux
 
     - name: 'install lastpass'
       sudo: yes

@@ -37,6 +37,8 @@
         - pass
         - htop
         - atop
+        - software-properties-common
+        - ansible
 
     - name: 'install pip packages'
       sudo: no
