@@ -9,7 +9,7 @@
     - name: 'Unarchive lastpass'
       sudo: no
       unarchive: src=/opt/battleschool/downloads/lplinux.tar.bz2
-        dest=/opt/battleschool/downloads/lplinux
+        dest=/opt/battleschool/downloads/
 
     - name: 'install lastpass'
       sudo: yes
