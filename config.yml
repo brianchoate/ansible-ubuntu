@@ -19,6 +19,7 @@ sources:
   #    - chrome.yml
   #    - atom.yml
   #    - n1.yml
-      - tools.yml
-      - spideroak.yml
+  #    - tools.yml
+  #    - spideroak.yml
+      - spotify.yml
   #    - aws.yml
