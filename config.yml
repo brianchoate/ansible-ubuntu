@@ -21,5 +21,6 @@ sources:
   #    - n1.yml
   #    - tools.yml
   #    - spideroak.yml
-      - spotify.yml
+  #    - spotify.yml
   #    - aws.yml
+      - lastpass.yml

@@ -1,0 +1,14 @@
+- hosts: workstation
+
+  tasks:
+    - name: 'download lastpass'
+      sudo: no
+      unarchive: src=https://lastpass.com/lplinux.tar.bz2
+        dest=/opt/battleschool/downloads/
+        copy=no
+
+    - name: 'install lastpass'
+      sudo: yes
+      command: /opt/battleschool/downloads/lplinux
+
+# Unarchive a file that needs to be downloaded (added in 2.0)
