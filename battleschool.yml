@@ -12,4 +12,4 @@
 
     - name: 'create opt/bin folder'
       sudo: yes
-      file: path=/opt/bin/ state=directory mode=0755 owner=root group=andor
+      file: path=/opt/bin/ state=directory mode=0755 owner=root group=root
