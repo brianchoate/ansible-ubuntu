@@ -1,6 +1,0 @@
-#- hosts: workstation
-#  tasks:
-#    - name: 'install atom packages playbook'
-#      sudo: yes
-#      command: /opt/battleschool/bin/ansible-galaxy install jgkim.atom
-#          creates=/etc/ansible/roles/jgkim.atom/
