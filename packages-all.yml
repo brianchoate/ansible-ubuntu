@@ -1,28 +1,28 @@
 - hosts: workstation
   tasks:
-    - name: 'install apt packages'
+    - name: 'install apt packages all'
       sudo: yes
       apt: name={{ item }}
       with_items:
         - ack-grep
         - httpie
-        - pylint
-        - pylint3
-        - pep8
-        - pep257
-        - gnome-do
-        - xfwm4-themes
-        - virt-manager
-        - virtualbox
-        - virtualbox-guest-additions-iso
-        - virtualbox-ext-pack
+        # - pylint
+        # - pylint3
+        # - pep8
+        # - pep257
+        # - gnome-do
+        # - xfwm4-themes
+        # - virt-manager
+        # - virtualbox
+        # - virtualbox-guest-additions-iso
+        # - virtualbox-ext-pack
         - lxc
         - lxc-templates
-        - xclip
+        # - xclip
         - vim
-        - vim-gtk
+        # - vim-gtk
         - vim-addon-manager
-        - vim-gnome
+        # - vim-gnome
         - vim-python-jedi
         - vim-scripts
         - vim-syntastic
@@ -39,14 +39,18 @@
         - atop
         - software-properties-common
         - ansible
+        # - thunderbird-globalmenu
+        # - enigmail
+        # - gpa
+
 
     - name: 'install pip packages'
       sudo: no
       pip: name={{ item }} extra_args='--user'
       with_items:
-        - flake8
-        - powerline-status
-        - yapf
+        # - flake8
+        # - yapf
         - thefuck
         - awscli
         - saws
+        - powerline-status

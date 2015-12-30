@@ -1,0 +1,20 @@
+---
+cache_dir: /opt/battleschool/cache
+
+
+sources:
+  #url:
+  #  - name: andor.yml
+  #    url: https://raw.githubusercontent.com/brianchoate/ansible-private/master/andor.yml?token=AAmBy2rr5SfJN53U_kbQ__bAqPV9FamLks5WfyFdwA%3D%3D
+
+  git:
+   - name: 'ubuntu1510-server'
+     repo: 'https://github.com/brianchoate/ansible-ubuntu'
+     playbooks:
+       - battleschool.yml
+       - icdiff.yml
+       - packages-all.yml
+       - packages-workstation.yml
+  #    - zsh.yml
+  #    - tools.yml
+  #    - aws.yml

@@ -1,0 +1,55 @@
+- hosts: workstation
+  tasks:
+    - name: 'install apt packages server'
+      sudo: yes
+      apt: name={{ item }}
+      with_items:
+        - ack-grep
+        # - httpie
+        # - pylint
+        # - pylint3
+        # - pep8
+        # - pep257
+        # - gnome-do
+        # - xfwm4-themes
+        # - virt-manager
+        # - virtualbox
+        # - virtualbox-guest-additions-iso
+        # - virtualbox-ext-pack
+        # - lxc
+        # - lxc-templates
+        # - xclip
+        # - vim
+        # - vim-gtk
+        # - vim-addon-manager
+        # - vim-gnome
+        # - vim-python-jedi
+        # - vim-scripts
+        # - vim-syntastic
+        # - vim-tabular
+        # - vim-vimoutliner
+        # - vim-gocomplete
+        # - vim-haproxy
+        # - vim-syntax-docker
+        # - vim-youcompleteme
+        # - gnupg
+        # - gnupg-agent
+        # - pass
+        # - htop
+        # - atop
+        # - software-properties-common
+        # - ansible
+        # - thunderbird-globalmenu
+        # - enigmail
+        # - gpa
+
+    - name: 'install pip packages'
+      sudo: no
+      pip: name={{ item }} extra_args='--user'
+      with_items:
+        - flake8
+        # - yapf
+        # - thefuck
+        # - awscli
+        # - saws
+        # - powerline-status

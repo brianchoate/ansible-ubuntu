@@ -1,0 +1,11 @@
+- hosts: workstation
+
+  tasks:
+    - name: 'download keybase'
+      sudo: no
+      get_url: url=https://dist.keybase.io/linux/deb/keybase-latest-amd64.deb
+        dest=/opt/battleschool/downloads/
+
+    - name: 'install keybase'
+      sudo: yes
+      apt: deb=/opt/battleschool/downloads/keybase-latest-amd64.deb

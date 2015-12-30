@@ -1,0 +1,12 @@
+# https://slack-ssb-updates.global.ssl.fastly.net/linux_releases/slack-desktop-1.2.6-amd64.deb
+- hosts: workstation
+
+  tasks:
+    - name: 'download slack'
+      sudo: no
+      get_url: url=https://slack-ssb-updates.global.ssl.fastly.net/linux_releases/slack-desktop-1.2.6-amd64.deb
+        dest=/opt/battleschool/downloads/
+
+    - name: 'install slack'
+      sudo: yes
+      apt: deb=/opt/battleschool/downloads/slack-desktop-1.2.6-amd64.deb
