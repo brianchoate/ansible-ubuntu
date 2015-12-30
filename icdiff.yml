@@ -2,10 +2,10 @@
 
   tasks:
     - name: 'download icdiff'
-      sudo: no
+      sudo: yes
       get_url: url=https://raw.githubusercontent.com/jeffkaufman/icdiff/release-1.7.3/icdiff
-        dest=/op/bin/icdiff
+        dest=/opt/bin/icdiff
 
     - name: 'remove .zshrc'
-      sudo: no
+      sudo: yes
       file: path=/opt/bin/icdiff mode="ugo+rx"
